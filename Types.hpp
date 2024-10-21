@@ -1,0 +1,11 @@
+//Written by Steve Nwachukwu and Tyler Burzenski
+
+#ifndef TYPES_HPP
+#define TYPES_HPP
+
+enum TokenType {WORDS, NUMBERS, STRINGS};
+
+enum StateType {START, DONE, ACQUIRING_TOKEN, ACQUIRING_COMMENT, ACQUIRING_STRING, SLASH_PENDING, ACQUIRING_SLASH,
+        PAREN_PENDING, ACQUIRING_PAREN};
+
+#endif
