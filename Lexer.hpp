@@ -1,5 +1,6 @@
 //Written by Steve Nwachukwu and Tyler Burzenski
 
+#pragma once
 #ifndef LEXER_HPP
 #define LEXER_HPP
 
@@ -11,6 +12,8 @@
 #include "Token.hpp"
 
 using namespace std;
+
+
 
 class Lexer {
 private:
@@ -25,7 +28,7 @@ private:
 public:
      Lexer(string inputFileName); //lexer constructor
      ~Lexer(); //lexer destructor
-     doLex();
+     void doLex();
      void printTokens(); //function used to print tokenMap contents
      void doToken(string name, TokenType tt); //helper function for token identifier
      void doStart(); //helper function to help with the state switching
